@@ -7,7 +7,30 @@
     <title>Document</title>
 </head>
 <style>
-    
+    button{
+            width: 20%;
+            height: 50px;
+            color: white;
+            background-color: rgb(82, 82, 82);
+            border: 0px;
+            font-size: 1em;
+            margin: -3px;
+      }
+      .About:hover{
+            background-color: red;
+      }
+      .Products:hover{
+            background-color: green;
+      }
+      .Technology:hover{
+            background-color: rgb(59, 180, 228);
+      }
+      .Downloads:hover{
+            background-color: orange;
+      }
+      .Etc:hover{
+            background-color: pink;
+      }
 </style>
 <body>
     <div id="About" class="content">
@@ -33,13 +56,19 @@
           <p>You can download a free 10 days trial.</p>
     </div>
     
-    <button id="default" class="tab">About</button>
-    <button class="tab">Products</button>
-    <button class="tab">Technology</button>
-    <button class="tab">Downloads</button>
-    <button class="tab">Etc</button>
+    <button id="default" class="About">About</button>
+    <button class="Products">Products</button>
+    <button class="Technology">Technology</button>
+    <button class="Downloads">Downloads</button>
+    <button class="Etc">Etc</button>
     
     <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+            const button = document.querySelectorAll('button');
+            button[0].addEventListener('click',(event)=>{
+
+            })
+      })
 
     </script>
     </body>
